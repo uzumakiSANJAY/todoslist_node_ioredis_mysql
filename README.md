@@ -1,1 +1,1 @@
-# fr_api# todoslist_node_ioredis_mysql
+This is a demo project on Nodejs, fastify , ioredis , mysql.
