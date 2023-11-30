@@ -27,7 +27,8 @@
     "env-schema": "^5.2.1",
     "fastify": "^4.24.3",
     "fastify-plugin": "^4.5.1",
-    "fluent-json-schema": "^4.0.0"
+    "fluent-json-schema": "^4.0.0",
+    "random-profile-generator": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

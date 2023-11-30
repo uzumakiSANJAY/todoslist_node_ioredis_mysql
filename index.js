@@ -1,5 +1,6 @@
 const configuration = require("./lib/config/fastify");
 const startServer = require("./lib/plugins/server");
+const fastifyRedis = require("@fastify/redis");
 
 const start = async () => {
   // fastify configuration
@@ -13,6 +14,13 @@ const start = async () => {
 
   server.register(require("@fastify/cors"), {
     // put your options here
+  });
+
+  // Register the fastify-redis plugin with your Fastify server
+  server.register(fastifyRedis, {
+    host: "localhost", // Redis host
+    port: 6379, // Redis port
+    // Any other Redis options you want to set
   });
 
   // reply if API not exists
